@@ -2,6 +2,8 @@
 
 Une page web simple pour l'affichage des données de vos réseaux sociaux.
 
+### [Voir un aperçu](https://jeffcodeur.github.io/social-media-dashbord)
+
 ## Technologies
 
 Ce projet a été créer avec : 
