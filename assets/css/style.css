@@ -9,16 +9,14 @@
 
   /* LIGHT THEME */
   --LightTheme: hsl(230, 22%, 74%);
-  --white: hsl(0, 0%, 100%);
   --VeryPaleBlue: hsl(225, 100%, 98%);
   --LightGrayishBlue: hsl(227, 47%, 96%);
   --DarkGrayishBlue: hsl(228, 12%, 44%);
-  --VeryDarkBlue: hsl(230, 17%, 14%);
 
   /* DARK THEME */
   --DarkTheme: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
   --VeryDarkBlue: hsl(230, 17%, 14%);
-  --VeryDarkBlue: hsl(232, 19%, 15%);
+  --VeryDarkBlueTop: hsl(232, 19%, 16%);
   --DarkDesaturatedBlue: hsl(228, 28%, 20%);
   --DesaturatedBlue: hsl(228, 34%, 66%);
   --White: hsl(0, 0%, 100%);
@@ -35,6 +33,7 @@ body {
   padding: 0px;
   font-size: 14px;
   font-family: "Inter", sans-serif;
+  background-color: var(--White);
   color: var(--DarkGrayishBlue);
 }
 
@@ -53,6 +52,11 @@ body {
 }
 .header-title {
   font-size: 1.5em;
+}
+.header-subtitle,
+.theme-btn-container span {
+  color: var(--DarkGrayishBlue);
+  font-weight: 700;
 }
 .header-container {
   width: 75%;
@@ -145,7 +149,6 @@ body {
   align-items: center;
 }
 .theme-btn-container span {
-  font-weight: 700;
   margin-right: 10px;
 }
 .theme-btn {
@@ -239,6 +242,27 @@ body {
   vertical-align: middle;
 }
 
+/* DARK THEME STYLE*/
+body.dark {
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+}
+body.dark .header {
+  background-color: var(--VeryDarkBlueTop);
+}
+body.dark .header-subtitle,
+body.dark .theme-btn-container span {
+  color: var(--DesaturatedBlue);
+}
+body.dark .overview-social-card,
+body.dark .overview-stats-card {
+  background-color: var(--DarkDesaturatedBlue);
+  color: var(--DesaturatedBlue);
+}
+body.dark .overview-stats-card__stats,
+body.dark .overview-social-card__followers {
+  color: var(--White);
+}
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 1012px) {
